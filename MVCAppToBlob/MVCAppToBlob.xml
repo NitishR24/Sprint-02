@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MVCAppToBlob</name>
+    </assembly>
+    <members>
+        <member name="T:MVCAppToBlob.Controllers.StorageController">
+            <summary>
+            Azure storage controller
+            </summary>
+        </member>
+        <member name="M:MVCAppToBlob.Controllers.StorageController.UpdateAzureBlob(MVCAppToBlob.Models.Attendence)">
+            <summary>
+            Update Blob
+            </summary>
+            <param name="attendence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCAppToBlob.Controllers.StorageController.UploadBlob(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Update the blok
+            </summary>
+            <param name="conStr"></param>
+            <param name="fileContent"></param>
+            <param name="containerName"></param>
+            <param name="isAppend"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MVCAppToBlob.Models.Attendence">
+            <summary>
+            This class contains defination of attendence
+            </summary>
+        </member>
+        <member name="P:MVCAppToBlob.Models.Attendence.Name">
+            <summary>
+            Name of the Student
+            </summary>
+        </member>
+    </members>
+</doc>
