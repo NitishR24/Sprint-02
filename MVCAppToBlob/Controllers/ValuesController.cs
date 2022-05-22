@@ -55,17 +55,6 @@ namespace MVCAppToBlob.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetAll")]
-        public string Get()
-        {
-            return "API Working";
-        }
-        [Route("GetAll/{id}")]
-        public string Get(int id)
-        {
-            return "API Working with id: "+id;
-        }
 
 
         /// <summary>
