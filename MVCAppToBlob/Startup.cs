@@ -56,13 +56,13 @@ namespace MVCAppToBlob
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Attendance}/{action=Create}/{id?}");
+                    pattern: "{controller=Attendance}/{action=CreateBlob}/{id?}");
 
                 endpoints.MapControllerRoute(
                    name: "api",
                    pattern: "{controller=Attendance}/{action=Create}/{id?}");
 
-                
+
             });
         }
     }

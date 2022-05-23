@@ -16,38 +16,38 @@ namespace MVCAppToBlob.Controllers
        // GET: Attendanc
 
 
-        public ActionResult Index()
-        {
-            return View("Create");
-        }
+        //public ActionResult Index()
+        //{
+        //    return View("Create");
+        //}
 
-        // GET: Attendanc/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        //// GET: Attendanc/Details/5
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
 
         //[HttpGet]
 
         // GET: Attendanc/Create
-        public ActionResult Create()
+        public ActionResult CreateBlob()
         {
             var model = new Attendence();
-            // model.Name = "Please enter name";
+            // model.Name = "Please enter name
             return View(model);
         }
 
         // POST: Attendanc/Create
 
         [ValidateAntiForgeryToken]
-        
+        [HttpPost]
 
-        public ActionResult Create(Attendence attendence)
+        public ActionResult CreateBlob(Attendence attendence)
         {
             try
             {
                 string attendStr = Newtonsoft.Json.JsonConvert.SerializeObject(attendence);
-                string conStr = "DefaultEndpointsProtocol=https;AccountName=studentstorageaccount;AccountKey=LQ4aJxyeX670rQ6DlHdKOG61lTaYMohSCe6RwL3Ug22/AbSJHRMh/t6imZffYobB5cVJh5brTyD++AStGfQKIA==;EndpointSuffix=core.windows.net";
+                string conStr = "DefaultEndpointsProtocol=https;AccountName=studentresultsmanagement;AccountKey=t4avAOin80zASeh6pWyDM/iagXTw/VkSVmkdCrEmWRdCxXoghEUHsCEG088ElCtT42S7Ex8Tf4jsPo+ydyV7Vw==;EndpointSuffix=core.windows.net";
 
                 try
                 {
@@ -147,45 +147,45 @@ namespace MVCAppToBlob.Controllers
         }
     
 //GET: Attendanc / Edit / 5
-        public ActionResult Edit(int id)
-{
-    return View();
-}
+//        public ActionResult Edit(int id)
+//{
+//    return View();
+//}
 
-// POST: Attendanc/Edit/5
-[HttpPost]
-[ValidateAntiForgeryToken]
-public ActionResult Edit(int id, IFormCollection collection)
-{
-    try
-    {
-        return RedirectToAction(nameof(Index));
-    }
-    catch
-    {
-        return View();
-    }
-}
+//// POST: Attendanc/Edit/5
+//[HttpPost]
+//[ValidateAntiForgeryToken]
+//public ActionResult Edit(int id, IFormCollection collection)
+//{
+//    try
+//    {
+//        return RedirectToAction(nameof(Index));
+//    }
+//    catch
+//    {
+//        return View();
+//    }
+//}
 
-        // GET: Attendanc/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+//        // GET: Attendanc/Delete/5
+//        public ActionResult Delete(int id)
+//        {
+//            return View();
+//        }
 
-        // POST: Attendanc/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+//        // POST: Attendanc/Delete/5
+//        [HttpPost]
+//        [ValidateAntiForgeryToken]
+//        public ActionResult Delete(int id, IFormCollection collection)
+//        {
+//            try
+//            {
+//                return RedirectToAction(nameof(Index));
+//            }
+//            catch
+//            {
+//                return View();
+//            }
+//        }
     }
 }

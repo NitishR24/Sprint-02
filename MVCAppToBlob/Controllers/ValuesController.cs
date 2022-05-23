@@ -35,7 +35,7 @@ namespace MVCAppToBlob.Controllers
             try
             {
                 string attendStr = Newtonsoft.Json.JsonConvert.SerializeObject(attendence);
-                string conStr = "DefaultEndpointsProtocol=https;AccountName=studentstorageaccount;AccountKey=LQ4aJxyeX670rQ6DlHdKOG61lTaYMohSCe6RwL3Ug22/AbSJHRMh/t6imZffYobB5cVJh5brTyD++AStGfQKIA==;EndpointSuffix=core.windows.net";
+                string conStr = "DefaultEndpointsProtocol=https;AccountName=studentresultsmanagement;AccountKey=t4avAOin80zASeh6pWyDM/iagXTw/VkSVmkdCrEmWRdCxXoghEUHsCEG088ElCtT42S7Ex8Tf4jsPo+ydyV7Vw==;EndpointSuffix=core.windows.net";
 
                 try
                 {
